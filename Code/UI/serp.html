@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Search Results</title>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/colors.css">
+  <link rel="stylesheet" type="text/css" href="./css/modal.css">
+  <link rel="stylesheet" type="text/css" href="./css/serp.css?1">
+  <link rel="icon" type="image/png" href="./img/se.png">
+
+</head>
+
+<body>
+  <div class="serp">
+
+    <div class="serp__layout">
+      <div class="serp__header">
+        <div class="serp__search">
+          <form class="serp__form">
+            <div>
+              <label name="q" id="qlabel" 
+              class="serp__query" 
+              maxlength="512"
+              autocomplete="off"
+              title="Search"
+              aria-label="Search"
+              dir="ltr"
+              spellcheck="false"
+              autofocus="autofocus"
+              ></label>
+            </div>
+          </form>
+        </div>
+        <a class="serp__logo" href="index.html"></a>
+      </div>
+    </div>
+
+
+    <div class="serp__body">
+      <div class="serp__main serp__results">
+
+        <h4 style="border: 3px solid black; background-color:black; color:white; font-family:verdana; text-align:center;" >FAQ model result</h4>
+
+        <div class="serp__web" id="faqdesc">
+          <p id="faq_ques" style="font-size: 120%; color: blue;">FAQ Ques:</p>
+          <p id="faq_ans" style="font-size: 90%; color: black;">FAQ answer:</p>
+        </div>
+        <br>
+
+        <h4 style="border: 3px solid black; background-color:black; color:white; font-family:verdana; text-align:center;" >Q&A Ranking model results</h4>
+        <p id="qnarankingsubject" style="font-weight: bold; font-size:90%; font-family:verdana; "></p>
+
+        <div class="serp__web" id="qnadesc">
+
+        </div>
+
+        <h4 style="border: 3px solid black; background-color:black; color:white; font-family:verdana; text-align:center;" >Modified PageRank</h4>
+        <p id="pagerank_results" style="font-weight: bold; font-size:90%; font-family:verdana; "></p>
+
+        <div class="serp__web" id="prdesc">
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  
+  <!--------- CUSTOM SEARCH ENGINE ---------->
+	<div class="footer">
+		<p style="border: 3px solid black; background-color:black; color:white; font-family:verdana; font-weight: bold; font-size:90%; text-align:center;">Custom Google Search Engine</p>
+  		<script async src="https://cse.google.com/cse.js?cx=db7ef7bbe24c634da"></script>
+		<div class="gcse-search"></div>
+	</div>
+
+  <br><br><br><br><br><br><br>
+
+  <!-- JS code -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="js/serppage.js"></script>
+
+</body>
+</html>

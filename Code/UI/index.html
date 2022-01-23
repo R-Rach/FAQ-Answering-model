@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Q&A</title>
+  <meta name="description" value="Qusetion and Answering System">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="./css/colors.css">
+  <link rel="stylesheet" type="text/css" href="./css/modal.css">
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <link rel="icon" type="image/png" href="./img/se.png">
+</head>
+
+<body>
+  <div class="index">
+    <section class="index__header">
+      <div class="index__logo"></div>
+      <br><br>
+      <div class="index__search">
+        <div class="index__form">
+          <div>
+            <input name="q" type="search" id="question" 
+            placeholder="Type your question here...."
+            class="index__query" 
+            class="index__form"
+            required >
+                  <!-- maxlength="512"
+                  autocomplete="on"
+                  title="Search"
+                  aria-label="Search"
+                  dir="ltr"
+                  spellcheck="true"
+                  autofocus="autofocus" > -->
+                </div>
+                <button class="index__button" aria-label="Search" type="" onclick="callModel()">
+                  <div class="index__ico"></div>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <footer class="index__footer">
+            <div class="index__bottom">
+              <ul class="index__links">        
+                <li><a href="#about">About</a></li>
+              </ul>
+              <p class="index__copyright">&copy; 2020 BITS Pilani</p>
+            </div>
+          </footer>
+        </div>
+
+        <div class="modal" id="about" aria-hidden="true">
+          <div class="modal__dialog">
+            <div class="modal__header">
+              <h2>About</h2>
+              <a href="#" class="modal__close" aria-hidden="true"><i class="material-icons">close</i></a>
+            </div>
+            <div class="modal__body">
+              <strong>BITS Pilani</strong><br>
+              <p>Write here.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- JS code -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/indexpage.js"></script>
+
+      </body>
+      </html>
