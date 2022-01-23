@@ -1,6 +1,10 @@
 A deep learning model which answers frequently asked questions on BITSAT (Bits Pilani entrance exams)
 
+
+
 #HOW TO RUN
+
+Download pre trained model {[G Drive](https://drive.google.com/file/d/1I77OjCvgtKvt8B5PNQVCDDMDkk7WZXCh/view?usp=sharing)} and paste it in folder - Code/Ranking-Based-Question-Answering-System/Code/WebService/model/ 
 
 1. Make a virtual  environment named "faqmodel" and install all packages from requirments.txt in 'FAQ-Retrieval' folder, using following command -> pip install -r requirements.txt
 
